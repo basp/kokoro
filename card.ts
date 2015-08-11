@@ -29,16 +29,16 @@ class Card {
 		return moment().add(this.int, 'day').toDate();
 	}
 	
+	static calculateEf(ef: number, q: number): number {
+		let newEf = ef - 0.8 + (0.28 * q) - (0.02 * q * q);
+		return newEf > 1.3 ? newEf : 1.3;
+	}
+
 	front: string;
 	back: string;
 	ef: number;
 	int: number;
 	revs: number;
-	
-	static calculateEf(ef: number, q: number): number {
-		let newEf = ef - 0.8 + (0.28 * q) - (0.02 * q * q);
-		return newEf > 1.3 ? newEf : 1.3;
-	}
 }
 
 export = Card;

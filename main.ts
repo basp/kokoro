@@ -1,4 +1,4 @@
-/// <reference path="typings/electron/electron.d.ts" />
+/// <reference path="typings/tsd.d.ts" />
 
 var app = require('app'),
 	BrowserWindow = require('browser-window'),
