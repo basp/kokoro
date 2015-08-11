@@ -11,7 +11,9 @@ var decks = [
 
 class DeckList implements MithrilModule {
 	controller() {
-		
+		return {
+			decks: m.prop(decks)
+		}
 	}
 	
 	view(ctrl) {
