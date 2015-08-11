@@ -1,6 +1,8 @@
-import m = require('mithril');
+/// <reference path="../typings/tsd.d.ts" />
 
-import Deck = require('./deck');
+import m = require('mithril');
+import Deck = require('../deck');
+import moment = require('moment');
 
 var decks = [
 	new Deck('Magyar'),
@@ -9,10 +11,11 @@ var decks = [
 
 class DeckList implements MithrilModule {
 	controller() {
+		
 	}
 	
 	view(ctrl) {
-		var rows = decks.map(x => {
+		var rows = ctrl.decks().map(x => {
 			return m('tr', [
 				m('td', x.name),
 				m('td', 0),

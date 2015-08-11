@@ -1,7 +1,7 @@
 /// <reference path="typings/tsd.d.ts" />
 
 import m = require('mithril');
-import Dashboard = require('./dashboard');
+import Dashboard = require('./components/dashboard');
 
 var root = {
 	controller: () => {},

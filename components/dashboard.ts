@@ -1,5 +1,6 @@
-import m = require('mithril');
+/// <reference path="../typings/tsd.d.ts" />
 
+import m = require('mithril');
 import Nav = require('./nav');
 import DeckList = require('./deck-list');
 
