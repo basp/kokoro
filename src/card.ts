@@ -49,6 +49,10 @@ class Card {
 	// This is just a straight translation from the formula described in the
 	// SM2 algorithm. See http://www.supermemo.com/english/ol/sm2.htm.
 	//
+	// The ease-factor (`ef`) will influence the interval between revisions.
+	// The more a card is answered correctly, the bigger the `ef` will get 
+	// which means there will be a longer interval between reviews. 
+	//
 	static calculateEf(ef: number, q: number): number {
 		let newEf = ef - 0.8 + (0.28 * q) - (0.02 * q * q);
 		return newEf > 1.3 ? newEf : 1.3;
