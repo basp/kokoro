@@ -1,7 +1,7 @@
-## kokoro
+## Kokoro
 Flash card application built on Electron and inspired by Anki.
 
-### Flash intro
+### Quick start
 
 	npm install
 	tsc
