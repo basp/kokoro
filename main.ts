@@ -1,3 +1,5 @@
+/// <reference path="typings/electron/electron.d.ts" />
+
 var app = require('app'),
 	BrowserWindow = require('browser-window'),
 	path = require('path');
