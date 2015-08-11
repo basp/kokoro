@@ -28,6 +28,10 @@ class Card {
 	answer(q: number): void {
 		q = q <= 3 ? q : 3;
 		this.revs = q > 0 ? this.revs + 1 : 1;
+		// TODO:
+		// One day is a big interval for a fresh review. We should try to 
+		// do a 10 min review like with Anki. 
+		// 
 		switch(this.revs) {
 		case 1:
 			this.int = 1; 
