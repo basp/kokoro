@@ -43,6 +43,12 @@ gulp.task('dist', (done) => {
 		
 	gulp.src('package.json')
 		.pipe(gulp.dest('dist'));
+		
+	done();
+});
+
+gulp.task('compile', () => {
+	
 });
 
 gulp.task('default', () => {
