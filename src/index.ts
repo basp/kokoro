@@ -1,13 +1,6 @@
 /// <reference path="../typings/tsd.d.ts" />
 
 import m = require('mithril');
-import Dashboard = require('./components/dashboard');
+import App = require('./components/app');
 
-var root = {
-	controller: () => {},
-	view: () => {
-		return m('div.container', new Dashboard());
-	}
-};
-
-m.module(document.body, root);
+m.module(document.body, new App());

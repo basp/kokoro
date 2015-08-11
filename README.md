@@ -13,11 +13,13 @@ Flash card application built on Electron and inspired by Anki.
 You can build from Visual Studio Code too with `CTRL-SHIFT-B` (or just run the 
 build task).
 
-Or just run `tsc` (version 1.5+) from the command line (in the root directory).
+Or run `tsc` (version 1.5+) from the command line (in the root directory).
 
 ### Test
 Using Jasmine latest, just go `jasmine`.
 
 ### Clean
-Run `gulp clean` to get rid of all the transpiled JavaScript. Note, this will 
-also clean up the `dist` directory.
+Run `gulp clean` to get rid of all the transpiled JavaScript.
+
+### Clean distribution
+Run `gulp clean-dist` to get rid of everything generated during `gulp dist`.

@@ -12,10 +12,14 @@ gulp.task('clean', (done) => {
 		
 	gulp.src('*.js', {read: false })
 		.pipe(clean());
-		
-	gulp.src('dist', { read: false })
+			
+	done();
+});
+
+gulp.task('clean-dist', ['clean'], (done) => {
+	gulp.src('dist')
 		.pipe(clean());
-		
+	
 	done();
 });
 
@@ -48,7 +52,7 @@ gulp.task('dist', (done) => {
 });
 
 gulp.task('compile', () => {
-	
+	// TODO
 });
 
 gulp.task('default', () => {

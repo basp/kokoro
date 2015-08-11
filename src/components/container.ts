@@ -7,14 +7,15 @@ class Container implements MithrilModule {
 		
 	}
 	
-	controller() {
+	controller(): void {
 		
 	}
 	
-	view(ctrl) {
+	view(ctrl): MithrilVirtualElement {
 		return m('div.container', this.contents);
 	}
 	
 	private contents: any;
 }
- 
+
+export = Container;
