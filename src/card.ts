@@ -36,6 +36,9 @@ class Card {
 			this.int = 6;
 			break;
 		default:
+			// At this point we are gonna incorporate `ef` (the ease factor)
+			// to calculate our review intervals.
+			//
 			this.ef = Card.calculateEf(this.ef, q);
 			this.int = Math.round(this.ef * this.int);
 			break;
