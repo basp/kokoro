@@ -4,10 +4,11 @@
   "description": "Flash card application built on Electron and inspired by Anki.",
   "main": "main.js",
   "dependencies": {
-    "mithril": "^0.2.0",
+    "bootstrap": "^3.3.5",
     "express": "^4.13.3",
-    "moment": "^2.10.6",
-    "bootstrap": "^3.3.5"
+    "jquery": "^2.1.4",
+    "mithril": "^0.2.0",
+    "moment": "^2.10.6"
   },
   "devDependencies": {},
   "repository": {

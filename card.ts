@@ -1,7 +1,9 @@
 import moment = require('moment');
 
 class Card {
-	constructor() {
+	constructor(front: string = '', back: string = '') {
+		this.front = front;
+		this.back = back;
 		this.revs = 0;
 		this.int = 0;
 		this.ef = 2.5;
@@ -27,6 +29,8 @@ class Card {
 		return moment().add(this.int, 'day').toDate();
 	}
 	
+	front: string;
+	back: string;
 	ef: number;
 	int: number;
 	revs: number;
