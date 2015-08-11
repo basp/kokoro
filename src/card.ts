@@ -17,6 +17,7 @@ class Card {
 	// later).
 	//
 	// The value `q` is the quality of the answer:
+	// 
 	// * 0 - complete black out
 	// * 1 - barely remembered
 	// * 2 - rememberd quite easily
@@ -45,6 +46,9 @@ class Card {
 		return moment().add(this.int, 'day').toDate();
 	}
 	
+	// This is just a straight translation from the formula described in the
+	// SM2 algorithm. See http://www.supermemo.com/english/ol/sm2.htm.
+	//
 	static calculateEf(ef: number, q: number): number {
 		let newEf = ef - 0.8 + (0.28 * q) - (0.02 * q * q);
 		return newEf > 1.3 ? newEf : 1.3;
