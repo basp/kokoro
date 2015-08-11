@@ -1,7 +1,7 @@
 /// <reference path="../typings/jasmine/jasmine.d.ts" />
 /// <reference path="../typings/moment/moment.d.ts" />
 
-import Card = require('../card');
+import Card = require('../src/card');
 import moment = require('moment');
 
 describe('Card', () => {

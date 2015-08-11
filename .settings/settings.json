@@ -3,8 +3,10 @@
 	"files.exclude": {
 		"**/.git": true,
 		"**/.DS_Store": true,
-		"spec/**/*.js": true,
 		"*.js": true,
-		"components/**/*.js": true
+		"spec/**/*.js": true,
+		"src/**/*.js": true,
+		"dist": true,
+		"node_modules": true
 	}
 }
