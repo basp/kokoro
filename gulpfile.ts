@@ -1,26 +1,18 @@
 /// <reference path="typings/tsd.d.ts" />
 
 import gulp = require('gulp');
-import clean = require('gulp-clean');
+import del = require('del');
 
 gulp.task('clean', (done) => {
-	gulp.src('spec/**/*.js', { read: false })
-		.pipe(clean());
-	
-	gulp.src('src/**/*.js', { read: false })
-		.pipe(clean());
-		
-	gulp.src('*.js', {read: false })
-		.pipe(clean());
-			
-	done();
+	del([
+		'spec/**/*.js',
+		'src/**/*.js',
+		'*.js'
+	], done);
 });
 
 gulp.task('clean-dist', ['clean'], (done) => {
-	gulp.src('dist')
-		.pipe(clean());
-	
-	done();
+	del(['dist'], done);
 });
 
 gulp.task('dist', (done) => {
