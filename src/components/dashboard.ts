@@ -3,6 +3,7 @@
 import m = require('mithril');
 import Nav = require('./nav');
 import DeckList = require('./deck-list');
+import CardForm = require('./card-form');
 
 var nav = new Nav();
 
@@ -18,17 +19,18 @@ nav.on('nav-browse', () => {
 	alert('nav-browse');
 });
 
-var decks = new DeckList();
+var deckList = new DeckList();
+var cardForm = new CardForm();
 
 class Dashboard implements MithrilModule {
 	controller() {
 	}
 	
 	view(ctrl) {
-		return m('div.container', [
+		return m('div', [
 			nav,
 			m('hr'),
-			decks
+			cardForm
 		]);
 	}
 }

@@ -6,8 +6,7 @@ Flash card application built on Electron and inspired by Anki.
 	npm install
 	tsc
 	gulp dist
-	cd dist
-	electron .
+	electron dist
 
 ### Build
 You can build from Visual Studio Code too with `CTRL-SHIFT-B` (or just run the 
