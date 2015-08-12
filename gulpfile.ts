@@ -43,10 +43,8 @@ gulp.task('dist', (done) => {
 	done();
 });
 
-gulp.task('compile', () => {
+gulp.task('build', () => {
 	// TODO
 });
 
-gulp.task('default', () => {
-	console.log('Oki!');
-});
+gulp.task('default', ['build']);
